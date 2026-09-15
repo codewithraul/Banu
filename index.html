@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#09070f">
+  <meta name="description" content="Bacım üçün sevgi ilə hazırlanmış xüsusi ad günü səhifəsi.">
+  <title>Ad günün mübarək, canım bacım!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-locked">
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient__orb ambient__orb--one"></span>
+    <span class="ambient__orb ambient__orb--two"></span>
+    <span class="ambient__orb ambient__orb--three"></span>
+    <div class="particles" id="particles"></div>
+  </div>
+
+  <section class="welcome" id="welcome" aria-labelledby="welcome-title">
+    <div class="welcome__halo" aria-hidden="true"></div>
+    <div class="welcome__content">
+      <p class="eyebrow">Sənin üçün hazırlanıb</p>
+      <h1 id="welcome-title">Ad günün mübarək Banu! <span aria-hidden="true">✨</span></h1>
+      <p class="welcome__subtitle">Bu gün sənin günündür.</p>
+      <button class="button button--primary" id="startButton" type="button">
+        <span>Başla</span>
+        <span class="button__arrow" aria-hidden="true">↗</span>
+      </button>
+    </div>
+    <p class="welcome__hint">Kiçik bir xatirəyə toxun</p>
+  </section>
+
+  <main class="site" id="mainContent" aria-hidden="true">
+    <section class="hero section" id="home">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__content reveal">
+        <p class="eyebrow">16 sentyabr · yalnız sənin üçün</p>
+        <h2>Ad günün mübarək,<br><span>canım bacım!</span> <span class="heart" aria-hidden="true">🤍</span></h2>
+        <p class="hero__lead">Bu gün sadəcə bir ad günü deyil. Sənin kimi gözəl bir insanın dünyaya gəldiyi gündür. Həmişə üzün gülsün, ürəyin rahat olsun və həyatın ən gözəl xatirələrlə dolsun.</p>
+        <a class="scroll-cue" href="#wish" aria-label="Arzu bölməsinə keç">
+          <span>Ardını kəşf et</span>
+          <i aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="section section--compact" id="wish">
+      <div class="container">
+        <article class="wish-card glass reveal">
+          <div class="wish-card__shine" aria-hidden="true"></div>
+          <div class="wish-card__mark" aria-hidden="true">✦</div>
+          <p class="eyebrow">Ürəkdən gələn sözlər</p>
+          <h3>Sənin üçün kiçik bir arzu</h3>
+          <p>Yeni yaşın sənə bol-bol xoşbəxtlik, sağlamlıq, uğur və gözəl günlər gətirsin. Nə arzulayırsansa, ən gözəl şəkildə gerçəkləşsin. Həmişə olduğun kimi gözəl, güclü və xoşbəxt qal.</p>
+          <footer>— Səni sevən qardaşından <span aria-hidden="true">🤍</span></footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="section memories" id="memories">
+      <div class="container">
+        <header class="section-heading reveal">
+          <p class="eyebrow">Bizdən qalan anlar</p>
+          <h3>Ən gözəl xatirələr</h3>
+          <p>Birlikdə keçən hər gün, yaddaşda qalan ayrı bir işıqdır.</p>
+        </header>
+        <div class="gallery" id="gallery" aria-label="Xatirələr qalereyası"></div>
+        <p class="gallery__note reveal">Şəkillərini <code></code> qovluğunda photo-1.jpg-dan photo-6.jpg-a qədər adlandır.</p>
+      </div>
+    </section>
+
+    <section class="section surprise" id="surprise">
+      <div class="container surprise__container">
+        <div class="surprise__aura" aria-hidden="true"></div>
+        <div class="surprise__intro reveal" id="surpriseIntro">
+          <p class="eyebrow">Sonuncu kiçik detal</p>
+          <h3>Bir balaca sürpriz...</h3>
+          <p>Sənin üçün ürəkdən gələn bir neçə söz də burada gizlənib.</p>
+          <button class="button button--secondary" id="surpriseButton" type="button">
+            <span>Sürprizi aç</span>
+            <span aria-hidden="true">✨</span>
+          </button>
+        </div>
+        <article class="surprise-message glass" id="surpriseMessage" aria-hidden="true">
+          <span class="surprise-message__star" aria-hidden="true">✦</span>
+          <p>Yaxşı ki, varsan. Həyatımda bacım olaraq həmişə xüsusi yerin olacaq. Yeni yaşında üzündən gülüş, ürəyindən rahatlıq heç vaxt əskik olmasın.</p>
+          <strong>Ad günün mübarək! <span aria-hidden="true">🤍</span></strong>
+        </article>
+        <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="footer__line" aria-hidden="true"></span>
+        <p>Made with love by Raul <span aria-hidden="true">🤍</span></p>
+        <small>Bu səhifə yalnız sənə məxsusdur.</small>
+      </div>
+    </footer>
+  </main>
+
+  <nav class="bottom-nav glass" id="bottomNav" aria-label="Əsas naviqasiya" aria-hidden="true">
+    <a href="#home" class="is-active" data-section="home"><span class="nav-dot"></span>Başlanğıc</a>
+    <a href="#memories" data-section="memories"><span class="nav-dot"></span>Xatirələr</a>
+    <a href="#surprise" data-section="surprise"><span class="nav-dot"></span>Sürpriz</a>
+  </nav>
+
+  <div class="music-control glass" id="musicControl" aria-hidden="true">
+    <button id="musicToggle" type="button" aria-label="Musiqini başladın" title="Musiqini başladın">
+      <span class="music-icon" id="musicIcon" aria-hidden="true">▶</span>
+    </button>
+    <button id="muteToggle" type="button" aria-label="Səsi bağla" title="Səsi bağla">
+      <span id="muteIcon" aria-hidden="true">◖</span>
+    </button>
+    <span class="music-bars" id="musicBars" aria-hidden="true"><i></i><i></i><i></i></span>
+  </div>
+  <audio id="backgroundMusic" preload="none" loop>
+    <source src="background.mp3" type="audio/mpeg">
+  </audio>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Şəkil baxışı">
+    <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Şəkli bağla">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="Əvvəlki şəkil">‹</button>
+    <figure>
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="Növbəti şəkil">›</button>
+  </dialog>
+
+  <noscript>Bu səhifənin interaktiv hissələri üçün JavaScript aktiv olmalıdır.</noscript>
+  <script src="script.js" defer></script>
+</body>
+</html>
